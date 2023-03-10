@@ -233,3 +233,67 @@ document.write("\n");
  /*
  break and continue keyword
 */
+
+// method to intract with user--> pause the script as it is pop upexicution
+/*
+1- alert
+
+alert() -- to show a messege
+
+
+
+*/
+ alert("Welcome")
+
+/*
+1- prompt
+shows messege , take input which hwe have to store in variaable. if cancel or esc is pressed it return null
+
+
+
+*/
+var prmpt=prompt("enter your age","give age");
+if(prmpt==null){
+    document.write("<br>");
+    document.write("blank age")
+}
+else{
+    document.write("<br>");
+    document.write(prmpt);
+}
+
+/*
+1- confirm
+shows a messege, confirm with ok pr cancel. it retur true or false for cancel/ esc
+
+
+*/
+var cfm=confirm("are you sure");// return true /false
+if(cfm){
+    document.write("<br>");
+ document.write("confirm is OK");
+}else{
+    document.write("<br>");
+    document.write("confirm is cancel");
+}
+
+
+//type conversion
+//1- implicit
+let im= 5+null;  // treat null as 0;
+console.log(typeof im);
+console.log(im);
+//2-explicit
+//using function
+let str=2+6;
+console.log( String(str)+"4");// to string
+console.log(Number("35"))// to number
+let booli=true;
+console.log(Number(booli));// boolean to number
+console.log(Boolean(0));//  number to boolean
+/*
+empty string to boolean == give false
+
+
+*/
+
